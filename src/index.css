@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+body, #root {
+  min-height: 100%;
+  font-family: 'Roboto Slab', serif; }
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container .controls {
+    background-color: #b8b9c1;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    align-items: center; }
+    .container .controls span {
+      color: white;
+      font-size: 1.2em; }
+  .container .ctrl button {
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin-right: 10px;
+    background-color: #020202;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s all; }
+    .container .ctrl button:hover {
+      background-color: #444; }
+    .container .ctrl button:disabled {
+      background-color: #999;
+      cursor: normal; }
+  .container .bottom-controls {
+    background-color: #b8b9c1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px; }
+    .container .bottom-controls .map-size {
+      display: none; }
+    .container .bottom-controls .label {
+      margin-right: 15px; }
+  .container table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 10px solid #b8b9c1;
+    background-color: #020202;
+    border-radius: 20px; }
+    .container table td {
+      width: 25px;
+      height: 25px;
+      border: 1px solid #b8b9c1; }
+    .container table td.populated {
+      background: #BB0A21; }
